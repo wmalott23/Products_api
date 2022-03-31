@@ -20,7 +20,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Table\",\r\n    \"description\": \"An alright Table\",\r\n    \"price\": 29.99,\r\n    \"inventory_quantity\": 5\r\n}",
+					"raw": "{\r\n    \"title\": \"Table\",\r\n    \"description\": \"An alright Table\",\r\n    \"price\": 29.99,\r\n    \"inventory_quantity\": 5,\r\n    \"image_url\": \"\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -52,7 +52,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/products/1/",
+					"raw": "http://127.0.0.1:8000/api/products/2/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -64,7 +64,7 @@
 					"path": [
 						"api",
 						"products",
-						"1",
+						"2",
 						""
 					]
 				}
@@ -78,7 +78,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"seat\",\r\n    \"description\": \"A seat\",\r\n    \"price\": 10.99,\r\n    \"inventory_quantity\": 1\r\n}",
+					"raw": "{\r\n    \"title\": \"seat\",\r\n    \"description\": \"A seat\",\r\n    \"price\": 10.99,\r\n    \"inventory_quantity\": 1,\r\n    \"image_url\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGSGTOLwQPbtAeQxPPC4lF8B4TJGQr9HTRhA&usqp=CAU\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
