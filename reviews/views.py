@@ -34,4 +34,10 @@ def reviews_detail(request, pk):
     elif request.method == 'DELETE':
         review.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-    
+
+@api_view(['GET'])
+def product_reviews(request, pk):
+    if request.method == 'GET':
+        reviews = Review.objects.filter(prod_num=pk)
+        serializer = ReviewSerializer(reviews, many=True)
+        return Response(serializer.data)
