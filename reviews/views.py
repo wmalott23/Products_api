@@ -5,7 +5,6 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializer import ReviewSerializer
 from .models import Review
-from reviews import serializer
 
 # Create your views here.
 
