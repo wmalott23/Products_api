@@ -17,6 +17,14 @@ class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
 
+class ProductReview(generics.ListAPIView):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
+    
+    def filter_queryset(self, queryset):
+        product = self.kwargs['pk']
+        return queryset.filter(prod_num=product)
+
 # Create your views here.
 
 # @api_view(['GET', 'POST'])
